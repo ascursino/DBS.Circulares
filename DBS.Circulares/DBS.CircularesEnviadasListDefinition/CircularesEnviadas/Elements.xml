@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="DBS.CircularesEnviadas"
+                OnQuickLaunch="TRUE"
+                TemplateType="10001"
+                Url="Lists/DBS.Circulares-CircularesEnviadas"
+                Description="My List Instance"                >
+                <!--Hidden="TRUE"      ver se vai ser necessário colocar essa lista como hidden       --> 
+                
+  </ListInstance>
+</Elements>

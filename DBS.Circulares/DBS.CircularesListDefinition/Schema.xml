@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<List xmlns:ows="Microsoft SharePoint" Title="DBS.CircularesListDefinition" FolderCreation="FALSE" Direction="$Resources:Direction;" Url="Lists/DBS.Circulares-DBS.CircularesListDefinition" BaseType="0" xmlns="http://schemas.microsoft.com/sharepoint/">
+  <MetaData>
+    <ContentTypes>
+      <ContentType ID="0x0100b9458142e43d4a158fbdbc5d12fcbd56" Name="DBS.Circulares - DBS.CircularesContentType" Group="DBS" Description="My Content Type" Inherits="TRUE" Version="0">
+        <FieldRefs>
+          <FieldRef ID="{A9AE6E6F-220C-4BDA-BF36-5C29C6DCACAC}" Name="Anexo" />
+          <FieldRef ID="{C485D1DD-0D15-4B87-A2B0-14E2AC463890}" Name="Mensagem" />
+          <FieldRef ID="{86E6E204-388D-4424-B9FC-EF244F867762}" Name="Destinatario" />
+          <FieldRef ID="{9EE9CC2F-BEDB-4F63-8268-010578F816A8}" Name="EnviarEmail" />
+          <!--<FieldRef ID="{0A4C23DD-CBE5-4EB2-8DE4-C99973CCB491}" Name="Ciente" />
+          <FieldRef ID="{3DA6D817-617A-416D-ACA4-51112CAA5689}" Name="DataHoraCiente" />-->
+          <!--<FieldRef ID="{3A7F1A3D-D1A1-4DD3-BC07-5912EC682894}" Name="IntegrarMural" />-->
+        </FieldRefs>
+      </ContentType>
+    </ContentTypes>
+    <Fields>
+      <Field ID="{a9ae6e6f-220c-4bda-bf36-5c29c6dcacac}" Type="Attachments" Name="Anexo" DisplayName="Anexo" Required="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <Field ID="{c485d1dd-0d15-4b87-a2b0-14e2ac463890}" Type="Text" Name="Mensagem" DisplayName="Mensagem" Required="TRUE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />     
+      <Field ID="{86E6E204-388D-4424-B9FC-EF244F867762}" Type="User"        Name="Destinatario"   DisplayName="Destinatário"          Required="TRUE"  ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" Mult="TRUE" UserSelectionMode="1" />
+      <Field ID="{9ee9cc2f-bedb-4f63-8268-010578f816a8}" Type="Boolean" Name="EnviarEmail" DisplayName="Enviar E-mail?" Required="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />
+      <!--Field ID="{0a4c23dd-cbe5-4eb2-8de4-c99973ccb491}" Type="Boolean" Name="Ciente" DisplayName="Ciente" Required="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" ShowInEditForm="TRUE" /-->
+      <!--Field ID="{3da6d817-617a-416d-aca4-51112caa5689}" Type="DateTime" Name="DataHoraCiente" DisplayName="Data e Hora do Ciente" Required="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="FALSE" ShowInEditForm="TRUE" /-->
+      <!--<Field ID="{3a7f1a3d-d1a1-4dd3-bc07-5912ec682894}" Type="Boolean" Name="IntegrarMural" DisplayName="IntegrarMural" Required="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE" ShowInEditForm="TRUE" />-->
+    </Fields>
+    <Views>
+      <View BaseViewID="0" Type="HTML" MobileView="TRUE" TabularView="FALSE">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="LinkTitleNoMenu">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="Modified" Ascending="FALSE">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="AddNewAnnouncement" Location="Resource(wss,addnewitem)" />
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_ONET_HOME)" />
+        </ParameterBindings>
+      </View>
+      <View BaseViewID="1" Type="HTML" WebPartZoneID="Main" DisplayName="$Resources:core,objectiv_schema_mwsidcamlidC24;" DefaultView="TRUE" MobileView="TRUE" MobileDefaultView="TRUE" SetupPath="pages\viewpage.aspx" ImageUrl="/_layouts/images/generic.png" Url="AllItems.aspx">
+        <Toolbar Type="Standard" />
+        <XslLink Default="TRUE">main.xsl</XslLink>
+        <RowLimit Paged="TRUE">30</RowLimit>
+        <ViewFields>
+          <FieldRef Name="Attachments">
+          </FieldRef>
+          <FieldRef Name="LinkTitle">
+          </FieldRef>
+        </ViewFields>
+        <Query>
+          <OrderBy>
+            <FieldRef Name="ID">
+            </FieldRef>
+          </OrderBy>
+        </Query>
+        <ParameterBindings>
+          <ParameterBinding Name="NoAnnouncements" Location="Resource(wss,noXinviewofY_LIST)" />
+          <ParameterBinding Name="NoAnnouncementsHowTo" Location="Resource(wss,noXinviewofY_DEFAULT)" />
+        </ParameterBindings>
+      </View>
+    </Views>
+    <Forms>
+      <Form Type="DisplayForm" Url="DispForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="EditForm" Url="EditForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+      <Form Type="NewForm" Url="NewForm.aspx" SetupPath="pages\form.aspx" WebPartZoneID="Main" />
+    </Forms>
+  </MetaData>
+</List>

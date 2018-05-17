@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ListInstance Title="Circulares"
+                OnQuickLaunch="TRUE"
+                TemplateType="10000"
+                Url="Lists/Circulares"
+                Description="Lista de Circulares com registros de ciência de recebimento">
+  </ListInstance>
+</Elements>

@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/" >
+  <Module Name="ExibeCircularesPorPessoa" List="113" Url="_catalogs/wp">
+    <File Path="ExibeCircularesPorPessoa\ExibeCircularesPorPessoa.webpart" Url="ExibeCircularesPorPessoa.webpart" Type="GhostableInLibrary" >
+      <Property Name="Group" Value="DBS" />
+    </File>
+  </Module>
+</Elements>

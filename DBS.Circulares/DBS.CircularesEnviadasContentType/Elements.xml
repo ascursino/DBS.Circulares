@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x01002bbd2953e92d4719ac5e9b57e0b7f8ea"
+               Name="DBS.Circulares - DBS.CircularesEnviadasContentType"
+               Group="Custom Content Types"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{B170C718-1D01-45FB-A5E1-492BDA1FAC26}" Name="Anexo"/>
+      <FieldRef ID="{6563420D-A80A-4A66-98A6-342B658B8009}" Name="Descricao"/>
+      <FieldRef ID="{77F4C628-4B48-4B35-AB43-7A8ACEF347BD}" Name="Destinatario"  />
+      <FieldRef ID="{801AE874-2F05-4650-97F5-0C3C03C76311}" Name="EnviarEmail"   />
+      <FieldRef ID="{E60AFA10-8C80-4B04-AEE7-C355F5047865}" Name="EmailEnviado" />
+      <FieldRef ID="{AFA660B3-419A-48E4-B9B7-9F3F81BA6F9E}" Name="Ciente"        />
+      <FieldRef ID="{868FA781-591B-401F-8A9D-9A240304DFA0}" Name="DataHoraCiente"/>
+
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <!-- Parent ContentType: Item (0x01) -->
+  <ContentType ID="0x0100b9458142e43d4a158fbdbc5d12fcbd56"
+               Name="DBS.Circulares - DBS.CircularesContentType"
+               Group="DBS"
+               Description="My Content Type"
+               Inherits="TRUE"
+               Version="0">
+    <FieldRefs>
+      <FieldRef ID="{A9AE6E6F-220C-4BDA-BF36-5C29C6DCACAC}" Name="Anexo"         />
+      <FieldRef ID="{C485D1DD-0D15-4B87-A2B0-14E2AC463890}" Name="Mensagem"      />
+      <FieldRef ID="{86E6E204-388D-4424-B9FC-EF244F867762}" Name="Destinatario"  />
+      <FieldRef ID="{9EE9CC2F-BEDB-4F63-8268-010578F816A8}" Name="EnviarEmail"   />
+      <!--<FieldRef ID="{0A4C23DD-CBE5-4EB2-8DE4-C99973CCB491}" Name="Ciente"        />-->
+      <!--<FieldRef ID="{3DA6D817-617A-416D-ACA4-51112CAA5689}" Name="DataHoraCiente"/>-->
+      <!--<FieldRef ID="{3A7F1A3D-D1A1-4DD3-BC07-5912EC682894}" Name="IntegrarMural" />-->    
+    </FieldRefs>
+  </ContentType>
+</Elements>

@@ -1,0 +1,11 @@
+﻿.exibicaoH2
+{
+ color:Blue;   
+}
+
+li.ExibicaoLI
+{
+    font-weight:bold;
+    list-style-image: url("/_layouts/images/DBS.Circulares/Document-20px.png");
+
+}

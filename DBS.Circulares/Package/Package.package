@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" dslVersion="1.0.0.0" Id="bb477ca7-2ddb-4c15-b35f-2c2add9e7ca3" solutionId="bb477ca7-2ddb-4c15-b35f-2c2add9e7ca3" resetWebServer="false" name="DBS.Circulares" xmlns="http://schemas.microsoft.com/VisualStudio/2008/SharePointTools/PackageModel">
+  <features>
+    <featureReference itemId="23dfb0d2-7767-4c82-bc96-f4766b30d320" />
+    <featureReference itemId="32d4cae4-ada8-4934-9a2f-50b4904f1fc4" />
+  </features>
+  <projectItems>
+    <projectItemReference itemId="76545236-11bc-4c14-bed1-c61d2071503e" />
+    <projectItemReference itemId="35c9a20b-0bd9-4163-990e-3a637a91e4d2" />
+  </projectItems>
+</package>

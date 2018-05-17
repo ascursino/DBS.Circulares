@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Field ID="{A9AE6E6F-220C-4BDA-BF36-5C29C6DCACAC}" Type="Attachments" Name="Anexo"          DisplayName="Anexo"                 Required="TRUE"  ShowInDisplayForm="TRUE" ShowInNewForm="TRUE"  ShowInEditForm="TRUE"/>
+  <Field ID="{C485D1DD-0D15-4B87-A2B0-14E2AC463890}" Type="Text"        Name="Mensagem"       DisplayName="Mensagem"              Required="TRUE"  ShowInDisplayForm="TRUE" ShowInNewForm="TRUE"  ShowInEditForm="TRUE"/>
+  <Field ID="{86E6E204-388D-4424-B9FC-EF244F867762}" Type="User"        Name="Destinatario"   DisplayName="Destinatário"          Required="TRUE"  ShowInDisplayForm="TRUE" ShowInNewForm="TRUE"  ShowInEditForm="TRUE" Mult="TRUE" UserSelectionMode="1" />
+  <Field ID="{9EE9CC2F-BEDB-4F63-8268-010578F816A8}" Type="Boolean"     Name="EnviarEmail"    DisplayName="Enviar E-mail?"        Required="FALSE" ShowInDisplayForm="TRUE" ShowInNewForm="TRUE"  ShowInEditForm="TRUE"/>  
+</Elements>
